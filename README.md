@@ -43,8 +43,8 @@ The **Object Following Robot** is an intelligent robotic system designed to dete
 
 ## 🚀 Setup & Usage
 
-1. **Wiring:** Connect all hardware as shown in the `slides_.pdf`.
-2. **Upload Code:** Flash `object_following_robot.ino` to Arduino using the Arduino IDE.
+1. **Wiring:** Connect all hardware as shown in the `Object-Following_Robot.pdf`.
+2. **Upload Code:** Flash `Object-Following_Robot.ino` to Arduino using the Arduino IDE.
 3. **Power Up:** Insert batteries and turn on the switch.
 4. **Test:** Place an object/human within range. The robot should follow it.
 
