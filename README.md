@@ -1,80 +1,84 @@
 # 🤖 Object Following Robot
 
 ## 📌 Overview
-The **Object Following Robot** is a smart robotic system designed to detect and follow humans or objects using a combination of **ultrasonic** and **infrared (IR) sensors**. It's ideal for applications like **hospital delivery bots**, **luggage carriers in malls**, and **defense robots**.
+The **Object Following Robot** is an intelligent robotic system designed to detect and follow a human or object using a combination of **ultrasonic** and **IR sensors**. It automates movement based on proximity sensing and is ideal for applications in **medical assistance**, **shopping**, and **military support**.
 
 ---
 
 ## 🔧 Hardware Components
 
-| Component                     | Quantity | Description                                               |
-|-------------------------------|----------|-----------------------------------------------------------|
-| Arduino UNO                   | 1        | Microcontroller board, the brain of the robot             |
-| L293D Motor Driver Shield     | 1        | Controls motor speed and direction                        |
-| IR Sensors                    | 2        | Detect lateral proximity of objects                       |
-| Ultrasonic Sensor (HC-SR04)    | 1        | Measures distance and detects frontal obstacles           |
-| SG90 Servo Motor              | 1        | Rotates the ultrasonic sensor for scanning                |
-| DC Geared Motors              | 4        | Drives the robot's movement                               |
-| Wheels                        | 4        | Enables movement of the robot                             |
-| Robot Chassis                 | 1        | Frame to mount all components                             |
-| Jumper Wires                  | —        | For connecting the components                             |
-| 18650 Rechargeable Batteries   | 2+       | Power supply for the robot                                |
-| Switch                        | 1        | Turns the robot on/off                                    |
-| Tools                         | Various  | Soldering kit, screwdrivers, etc.                         |
+| Component                | Quantity | Description                                           |
+|--------------------------|----------|-------------------------------------------------------|
+| Arduino UNO              | 1        | Main microcontroller board                           |
+| L293D Motor Driver Shield| 1        | Motor control module                                 |
+| IR Sensors               | 2        | Infrared sensors for side/object detection           |
+| Ultrasonic Sensor (HC-SR04) | 1    | For measuring distance and obstacle avoidance        |
+| SG90 Servo Motor         | 1        | For directional sensor mounting                      |
+| DC Geared Motors         | 4        | Drive the robot’s wheels                             |
+| Wheels                   | 4        | For mobility                                          |
+| Robot Chassis            | 1        | Structure to hold components                         |
+| Jumper Wires             | As needed| Connections between components                       |
+| 18650 Rechargeable Batteries | 2+   | Power supply                                          |
+| Battery Holder & Switch  | 1 each   | To manage power on/off                               |
+| Tools                    | -        | Soldering kit, screwdriver, wire cutter, etc.        |
 
 ---
 
 ## 💡 Features
-
-- 🧍 **Human/Object Following:** Detects and follows humans or objects within ~4 meters.
-- 🚧 **Obstacle Detection & Avoidance:** Prevents collisions using ultrasonic and IR sensors.
-- 🤖 **Real-Time Control:** Arduino-based system for smooth operation.
-- 🔌 **Mobile & Battery-Powered:** Provides flexibility and mobility for various uses.
+- Follows a person or object within ~4 meters
+- Avoids obstacles using ultrasonic detection
+- Uses IR for lateral object tracking
+- Controlled by Arduino and motor driver
 
 ---
 
 ## 🛠️ Working Principle
 
-- **Ultrasonic Sensor (HC-SR04):** Measures the distance to objects in front and helps the robot maintain a safe following distance.
-- **IR Sensors:** Detect lateral proximity to objects and guide the robot’s turns.
-- **L293D Motor Driver Shield:** Controls motor direction and speed based on sensor inputs, ensuring smooth movement and obstacle avoidance.
-- **SG90 Servo Motor:** Rotates the ultrasonic sensor to scan in a wider range, improving the robot's ability to detect objects.
-- The **Arduino UNO** microcontroller processes all sensor data and controls the robot’s movements in real-time.
+- **Ultrasonic sensor** detects distance and adjusts movement forward or backward.
+- **IR sensors** detect lateral displacement and guide left or right turns.
+- **Servo motor** can help rotate ultrasonic sensor for wider detection.
+- All components are controlled via Arduino UNO using PWM and digital I/O pins.
 
 ---
 
 ## 📂 File Structure
 
-```plaintext
 object-following-robot/
 ├── object_following_robot.ino    # Arduino code for robot operation
 ├── slides_.pdf                   # Project documentation (overview, working, block diagram)
 ├── README.md                     # Full project description and setup instructions
 └── requirements.txt              # Optional, for Python-based versions (not used in Arduino)
 
-```
-🚀 Setup & Usage
+---
 
-Assemble Hardware:
-Follow the wiring diagram in the slides_.pdf for connecting all components.
-Upload Code:
-Open the object_following_robot.ino file in the Arduino IDE.
-Upload the code to your Arduino UNO board.
-Power On:
-Connect the 18650 rechargeable batteries to the power input and turn the switch on.
-Operation:
-Place an object or walk in front of the robot. It will autonomously follow the object and avoid obstacles in its path.
-📈 Result
+## 🚀 Setup & Usage
 
-Autonomous Following: The robot successfully follows a person or object.
-Safe Distance Maintenance: The ultrasonic sensor ensures the robot maintains a safe following distance.
-Obstacle Avoidance: The robot detects and avoids obstacles using the IR sensors and changes direction as necessary.
-🔭 Future Enhancements
+1. **Wiring:** Connect all hardware as shown in the `slides_.pdf`.
+2. **Upload Code:** Flash `object_following_robot.ino` to Arduino using the Arduino IDE.
+3. **Power Up:** Insert batteries and turn on the switch.
+4. **Test:** Place an object/human within range. The robot should follow it.
 
-Remote Control: Add Bluetooth or Wi-Fi functionality to control the robot remotely.
-Object Recognition: Implement a camera and AI for enhanced object recognition capabilities.
-Voice Command Integration: Enable voice commands to control the robot.
-Improved Power Management: Implement better power-saving techniques to extend battery life.
-🧑‍💻 Author
+---
 
-P. Teja Anand
+## 📈 Result
+
+The robot can:
+- Accurately follow a human/object in real-time
+- Maintain a set distance (within 4 meters)
+- Avoid obstacles on its path
+
+---
+
+## 🔭 Future Improvements
+
+- Add wireless control via Bluetooth/Wi-Fi
+- Add camera for object recognition
+- Upgrade motors and chassis for outdoor use
+- Implement real-time tracking via mobile app
+
+---
+
+## 🧑‍💻 Authors
+- P.Teja Anand
+
+---
