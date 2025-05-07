@@ -47,7 +47,7 @@ All logic is handled by the **Arduino UNO**.
 
 ## 📂 File Structure
 
-```yaml
+``
 object-following-robot/
 ├── object_following_robot.ino    # Arduino source code
 ├── slides_.pdf                   # Project documentation (overview, working, block diagram)
