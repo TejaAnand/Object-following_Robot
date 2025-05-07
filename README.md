@@ -41,16 +41,6 @@ The **Object Following Robot** is an intelligent robotic system designed to dete
 
 ---
 
-## 📂 File Structure
-
-object-following-robot/
-├── object_following_robot.ino    # Arduino code for robot operation
-├── slides_.pdf                   # Project documentation (overview, working, block diagram)
-├── README.md                     # Full project description and setup instructions
-└── requirements.txt              # Optional, for Python-based versions (not used in Arduino)
-
----
-
 ## 🚀 Setup & Usage
 
 1. **Wiring:** Connect all hardware as shown in the `slides_.pdf`.
