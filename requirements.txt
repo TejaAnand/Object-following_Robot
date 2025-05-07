@@ -1,0 +1,16 @@
+# Hardware Components
+Arduino UNO
+L293D Motor Driver Shield
+IR Sensors (2 pcs)
+Ultrasonic Sensor (HC-SR04)
+SG90 Servo Motor
+DC Geared Motors (4 pcs)
+Wheels (4 pcs)
+Robot Chassis
+Jumper Wires
+18650 Rechargeable Batteries (2+)
+Switch
+Tools (Soldering kit, screwdrivers, etc.)
+
+# Optional: Libraries for Arduino (If using a Python-based interface)
+pySerial       # For serial communication between Arduino and Python
